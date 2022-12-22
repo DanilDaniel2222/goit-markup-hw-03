@@ -1,3 +1,28 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+.container-studio{
+    height: 2593px;
+}
+.container-portfolio{
+    height: 2074px;
+}
+
+.container-small{
+    width: 1128px;
+    margin: 0 auto;
+}
+.container-big{
+    width: 1440px;
+    margin: 0 auto;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     color: var(--brand-black-color);
@@ -12,6 +37,8 @@ body{
     --white-color-2: #F4F4FD;
     --white-footer-color: #E7E9FC;
 }
+
+
 
 .web {
     font-family: 'Raleway';
@@ -292,7 +319,6 @@ body{
     letter-spacing: 0.02em;
     color: var(--brand-black-color);
 }
-
 
 
 
