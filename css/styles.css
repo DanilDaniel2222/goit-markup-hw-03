@@ -25,10 +25,10 @@ body{
     --brand-black-color: #434455;
     --black-color: #2E2F42;
     --blue-color: #4D5AE5;
-    --blue-color-2: #404BBF;
-    --white-color: #FFFFFF;
-    --white-color-2: #F4F4FD;
-    --white-footer-color: #E7E9FC;
+    --dark-blue-color: #404BBF;
+    --brand-white-color: #FFFFFF;
+    --first-white-color: #F4F4FD;
+    --second-white-color: #E7E9FC;
 }
 
 .container{
@@ -39,13 +39,6 @@ body{
     margin-right: auto;
 }
 
-.container-header{
-    width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
 .header-list{
     display: flex;
     align-items: center;
@@ -103,7 +96,7 @@ body{
 .list-contacts{
     list-style: none;
     display: flex;
-    margin-left: 331px;
+    margin-left: auto;
 
 }
 .contacts-title{
@@ -136,9 +129,8 @@ body{
     font-weight: 700;
     font-size: 56px;
     line-height: calc(60/56);
-    text-align: center;
     letter-spacing: 0.02em;
-    color: var(--white-color);
+    color: var(--brand-white-color);
     margin-bottom: 46.41px;
     max-width: 1440px;
     display: block;
@@ -151,7 +143,7 @@ body{
     font-size: 16px;
     line-height: calc(19/16);
     letter-spacing: 0.04em;
-    color: var(--white-color);
+    color: var(--brand-white-color);
     cursor: pointer;
     background-color: var(--blue-color);
     padding: 16px 32px;
@@ -162,7 +154,7 @@ body{
 .button-order-service:hover,
 .button-order-service:focus,
 .button-order-service:active{
-    background-color: var(--blue-color-2);
+    background-color: var(--dark-blue-color);
 }
 
 
@@ -214,6 +206,7 @@ body{
 
 .section-doing{
     padding-top: 120px;
+    padding-bottom: 120px;
 }
 .title-doing {
     font-weight: 700;
@@ -253,15 +246,15 @@ body{
 }
 
 .background-studio-people-1{
-    background-color: var(--white-color-2);
+    background-color: var(--first-white-color);
     padding-top: 120px;
     padding-bottom: 120px;
 }
 .background-studio-people-2{
-    background-color: var(--white-color);
+    background-color: var(--brand-white-color);
 }
 .image-person{
-    background-color: var(--white-color);
+    background-color: var(--brand-white-color);
     display: block;
     width: 100%;
 }
@@ -317,14 +310,14 @@ body{
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--white-color-2);
+    color: var(--first-white-color);
 
 }
 .footer-text {
     font-size: 16px;
     line-height: calc(24/16);
     letter-spacing: 0.02em;
-    color: var(--white-footer-color);
+    color: var(--second-white-color);
     width: 264px;
     margin-top: 16px;
 
@@ -343,6 +336,7 @@ body{
     list-style: none;
     display: flex;
     justify-content: center;
+    margin-bottom: 66px;
 }
 .button{
     font-family: inherit;
@@ -354,16 +348,17 @@ body{
     letter-spacing: 0.04em;
     color: var(--blue-color);
     cursor: pointer;
-    background-color: var(--white-color-2);
+    background-color: var(--first-white-color);
     padding: 12px 24px;
-    border: 1px solid transparent;
+    border: 1px solid var(--second-white-color);
     border-radius: 4px;
 }
 .button:hover,
 .button:focus,
 .button:active{
-    color: var(--white-color);
-    background-color: var(--blue-color-2);
+    color: var(--brand-white-color);
+    background-color: var(--dark-blue-color);
+    border: 1px solid transparent;
 }
 
 .list-buttons .item+.item{
@@ -372,6 +367,7 @@ body{
 
 
 .section-portfolio{
+    padding-top: 96px;
     padding-bottom: 120px;
 }
 .title-portfolio-main{
@@ -408,6 +404,10 @@ img{
     flex-wrap: wrap;
     padding-right: 0;
     padding-left: 0;
+}
+
+.link{
+    text-decoration: none;
 }
 
 .image-portfolio{
